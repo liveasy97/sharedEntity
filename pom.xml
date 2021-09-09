@@ -81,7 +81,7 @@
 		<repository>
 		<id>github</id>
 		<name>GitHub Packages</name>
-		<url>https://maven.pkg.github.com/binduvukyam/shared</url>
+		<url>https://maven.pkg.github.com/liveasy97/sharedEntity</url>
 		</repository>
 	</distributionManagement>
 </project>
