@@ -24,14 +24,15 @@ public @Data class TruckData {
 
 	@Id
 	private String truckId;
-	
+
 	@NotBlank(message = "Transporter Id can not be null")
 	private String transporterId;
 	@NotBlank(message = "Truck Number can not be null")
 	private String truckNo;
-	
+
 	private Boolean truckApproved;
 	private String imei;
+	private String deviceId;
 	private long passingWeight;
 	private String driverId;
 	private Integer tyres;
@@ -39,7 +40,7 @@ public @Data class TruckData {
 
 	@Enumerated(EnumType.STRING)
 	public TruckType truckType;
-	
+
 	@CreationTimestamp
 	public Timestamp timestamp;
 
