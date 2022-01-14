@@ -3,8 +3,6 @@ package sharedEntity;
 import java.sql.Timestamp;
 
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
@@ -38,8 +36,10 @@ public @Data class TruckData {
 	private Integer tyres;
 	private Long truckLength;
 
-	@Enumerated(EnumType.STRING)
-	public TruckType truckType;
+//	@Enumerated(EnumType.STRING)
+//	public TruckType truckType;
+
+	public String truckType;
 
 	@CreationTimestamp
 	public Timestamp timestamp;
